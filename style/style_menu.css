@@ -1,0 +1,84 @@
+/* Estilos para el menú hamburguesa */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+/* Estilos para el menú de navegación */
+/* Estilos para el menú de navegación */
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 2;
+    transform: translateY(-100%); /* Cambia translateX a translateY */
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu.active {
+    transform: translateY(0); /* Cambia translateX a translateY */
+    display: block;
+}
+
+/* Estilos adicionales para centrar el menú */
+.menu-content {
+    /* text-align: center;  */
+    transform: translateX(-250%); /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #6b001f;
+}

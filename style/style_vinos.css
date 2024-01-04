@@ -1,0 +1,252 @@
+/* Aplicar el mismo tipo de letra a todos los elementos */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Resto de tus estilos aquí */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* Estilos del Carrusel */
+.carousel {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container .container {
+  width: 30%;
+  /* Ajusta el ancho de la imagen */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  position: relative;
+}
+
+.carousel-container .container img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-container .overlay {
+  background-color: rgba(40, 41, 41, 0.8);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-container .text {
+  color: rgb(92, 7, 7);
+  font-size: 80px;
+}
+
+.carousel-container:hover .container {
+  opacity: 0.8;
+}
+
+.carousel-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Estilos del Encabezado */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  /* Color de fondo del encabezado */
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: #6b001f;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  /* Color de enlace en el menú de navegación */
+}
+
+a:hover {
+  color: #6b001f;
+  /* Color de enlace en el menú de navegación en hover */
+}
+
+/* Estilos del Menú de Navegación */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu.active {
+  display: block;
+}
+
+/* Estilos de las Flechas de Navegación del Carrusel */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  /* Color de fondo del encabezado */
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: #6b001f;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  /* Color de enlace en el menú de navegación */
+}
+
+a:hover {
+  color: #6b001f;
+  /* Color de enlace en el menú de navegación en hover */
+}
+
+/* Nuevo estilo para el efecto de hover */
+.carousel-container .image {
+  /* Ajusta el tamaño de la imagen en el carrusel */
+  width: 20%;
+  /* Por ejemplo, cambia el valor para ajustar el ancho de la imagen */
+  height: auto;
+  display: block;
+  /* Para centrar la imagen horizontalmente */
+  margin: 0 auto;
+  /* Para centrar la imagen horizontalmente */
+  opacity: 1;
+  /* Asegúrate de que la imagen no esté oculta por el overlay */
+  transition: opacity 0.3s ease;
+  position: relative;
+  /* Añade position:relative para que los elementos hijos puedan posicionarse de forma relativa a la imagen */
+}
+
+
+.carousel-container .overlay {
+  /* Ajusta el color del overlay y su opacidad */
+  background-color: rgba(40, 41, 41, 0.8);
+  /* Por ejemplo, un tono de azul con opacidad del 80% */
+  opacity: 1;
+  /* Asegúrate de que el overlay esté inicialmente oculto */
+  position: absolute;
+  /* Posiciona el overlay de forma absoluta dentro del contenedor de la imagen */
+  top: 0;
+  /* Alinea el overlay en la parte superior */
+  left: 0;
+  /* Alinea el overlay en la parte izquierda */
+  width: 100%;
+  /* Hace que el overlay ocupe todo el ancho de la imagen */
+  height: 100%;
+  /* Hace que el overlay ocupe toda la altura de la imagen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  /* Inicialmente, el overlay estará oculto */
+  transition: opacity 0.3s ease;
+  /* Añade una transición para suavizar el efecto */
+}
+
+.carousel-container .text {
+  /* Ajusta el color del texto y su tamaño */
+  color: rgb(92, 7, 7);
+  font-size: 80px;
+  /* ...otros estilos de texto si lo deseas... */
+}
+
+.carousel-container:hover .image {
+  /* Cambia la opacidad de la imagen en el hover */
+  opacity: 0.8;
+  /* Ajusta el valor para cambiar la opacidad en el hover */
+}
+
+.carousel-container:hover .overlay {
+  /* Muestra el overlay en el hover */
+  opacity: 1;
+}

@@ -1,0 +1,66 @@
+/* Aplicar el mismo tipo de letra a todos los elementos */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor de la página */
+.page-container {
+  background-image: linear-gradient(45deg, #6b001f 50%, #FFFFFF 50%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para la tabla */
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  color: #6b001f;
+}
+
+thead {
+  background-color: #f6f6f6;
+  color: white;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+/* Estilos para los botones */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  color: rgb(132, 15, 15);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 25px; /* Agrega margen superior para bajar los botones */
+}
+
+.button:hover {
+  background-color: #000000;
+}

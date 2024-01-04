@@ -1,0 +1,70 @@
+/*Login*/
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5; /* Color de fondo del cuerpo */
+}
+
+header img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Ajusta la altura de la imagen de forma automática */
+  margin-left: 70%; /* Añade un margen izquierdo para mover la imagen a la derecha */
+}
+
+.logeo-form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #6b001f; /* Color vino */
+  border-radius: 5px;
+}
+
+.logeo-form h2 {
+  text-align: center;
+  color: #fff; /* Color de texto blanco */
+}
+
+.logeo-form input[type="text"],
+.logeo-form input[type="password"] {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.logeo-form input[type="text"]:focus,
+.logeo-form input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fff; /* Efecto de resaltado */
+}
+
+.logeo-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff; /* Color de fondo blanco */
+  color: #6b001f; /* Color de texto vino */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px; /* Margen superior para bajar el botón */
+}
+
+.logeo-form button[type="submit"]:hover {
+  background-color: #b86a7f; /* Color de fondo vino oscuro en hover */
+  color: #fff; /* Color de texto blanco en hover */
+}
+
+.logeo-form center a {
+  color: #fff; /* Color de texto blanco para el enlace "Registrate" */
+  text-decoration: none;
+}
+
+.logeo-form center a:hover {
+  color: #b86a7f; /* Color de texto vino oscuro en hover para el enlace "Registrate" */
+}

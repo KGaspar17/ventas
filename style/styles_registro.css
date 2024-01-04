@@ -1,0 +1,171 @@
+/* Aplicar el mismo tipo de letra a todos los elementos */
+* {
+  font-family: Arial, sans-serif;
+}
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(45deg, #FFFFFF 50%, #6b001f 50%);
+}
+
+/* Variables de Color */
+:root {
+  --secondary-color: #6b001f;
+  --text-color: #000;
+  /* Cambiar el color del texto a blanco */
+}
+
+/* Estilos del Contenedor */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos específicos del formulario de registro */
+.signup__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Asegurar que el formulario ocupe toda la altura de la pantalla */
+}
+
+/* Estilos del Formulario (sección derecha) */
+.signup__form {
+  flex: 1;
+  background-color: #fff;
+  /* Cambiar el fondo a blanco */
+  padding: 30px;
+  box-sizing: border-box;
+  height: 100%;
+  /* Asegurar que el formulario ocupe toda la altura del contenedor */
+  display: flex;
+  /* Usar flexbox para centrar verticalmente el formulario */
+  justify-content: center;
+  /* Centrar verticalmente el formulario */
+  align-items: center;
+  /* Alinear el contenido del formulario al centro verticalmente */
+  text-align: center;
+  /* Alinear el texto del formulario al centro horizontalmente */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: var(--text-color);
+  /* Usar la variable de color para el texto */
+}
+
+.btn--form {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn--form:hover {
+  background-color: #6b001f;
+}
+
+/* Estilos para el formulario en dispositivos pequeños */
+@media screen and (max-width: 768px) {
+  .signup__container {
+    flex-direction: column;
+  }
+
+  .signup__thumbnail {
+    flex: none;
+    width: 100%;
+    height: auto;
+  }
+}
